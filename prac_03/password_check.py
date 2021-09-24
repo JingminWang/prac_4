@@ -1,4 +1,3 @@
-Min_length=5
 def main():
     password = get_password()
     while not is_valid_password(password):
@@ -16,6 +15,7 @@ def Print_asterisks(password):
     for i in range(len(password)):
         print('*', end='')
 def is_valid_password(password):
+    Min_length = 5
     if len(password)<Min_length:
         return False
     else:
