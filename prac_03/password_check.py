@@ -5,7 +5,7 @@ def main():
         Print_asterisks(password)
         print()
         password = input(">")
-    print("is valid")
+    print("{} is valid".format(password))
     Print_asterisks(password)
 
 
@@ -14,8 +14,9 @@ def get_password():
 
 
 def Print_asterisks(password):
-    for i in range(len(password)):
-        print('*', end='')
+    #for i in range(len(password)):
+    print('*'*len(password))
+     #   print('*', end='')
 
 
 def is_valid_password(password):

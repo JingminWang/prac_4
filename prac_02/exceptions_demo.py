@@ -16,4 +16,9 @@ except ValueError:
 
 except ZeroDivisionError:
     print("Cannot divide by zero!")
+    while(ZeroDivisionError):
+        denominator = int(input("Enter the denominator: "))  # fenmu while(denominator==0):
+        fraction = numerator / denominator
+        print(fraction)
+
 print("Finished.")
